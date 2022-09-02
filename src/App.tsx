@@ -10,7 +10,10 @@ function App() {
         <Layout>
           <div className="mainScreen">
             <div className="content">
-              <h1>Rethink your living & renting</h1>
+              <h1>
+                {`Rethink your 
+                  living & renting`}
+              </h1>
               <p>Make your stay painless with us</p>
             </div>
             <div className="filterBox">
