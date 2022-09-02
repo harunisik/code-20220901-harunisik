@@ -1,25 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import Layout from './Layout';
+import { ReactComponent as SearchIcon } from './search-icon.svg';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Layout>
+          <div className="mainScreen">
+            <div className="content">
+              <h1>Rethink your living & renting</h1>
+              <p>Make your stay painless with us</p>
+            </div>
+            <div className="filterBox">
+              <div>
+                <h5>CITY</h5>
+                <p>Select your city</p>
+              </div>
+              <div>
+                <h5>DATES</h5>
+                <p>Select your dates</p>
+              </div>
+              <div>
+                <h5>GUESTS</h5>
+                <p>Add guests</p>
+              </div>
+              <div className="searchBtn">
+                <SearchIcon />
+                <p>Search</p>
+              </div>
+            </div>
+          </div>
+        </Layout>
+      </div>
+    </Router>
   );
 }
 
