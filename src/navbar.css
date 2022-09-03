@@ -1,0 +1,33 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5% 4%;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.navBar .link {
+  font-family: 'Dancing Script';
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 54px;
+  color: white;
+  text-decoration: none;
+}
+
+.navBar ul li {
+  font-family: 'Exo 2';
+  font-weight: 500;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline;
+  margin-left: 3em;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    padding: 3% 7%;
+  }
+}

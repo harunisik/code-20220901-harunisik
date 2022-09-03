@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
 import useCheckMobileScreen from './useCheckMobileScreen';
+import { ReactComponent as MenuIcon } from './menu-icon.svg';
+import './navbar.css';
 
 const Navigation = () => {
-  const isMobile = useCheckMobileScreen(768);
+  const isMobileView = useCheckMobileScreen(768);
 
   return (
     <nav className="navBar">
       <Link to="/" className="link">
         Your Logo
       </Link>
-      {isMobile ? (
-        <div></div>
+      {isMobileView ? (
+        <MenuIcon />
       ) : (
         <ul>
           <li>Explore</li>
