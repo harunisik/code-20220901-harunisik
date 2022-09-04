@@ -1,5 +1,4 @@
 import { ReactComponent as SearchIcon } from './search-icon.svg';
-import './styles/main.css';
 
 function MainScreen() {
   return (
@@ -7,7 +6,7 @@ function MainScreen() {
       <div className="content">
         <h1>
           {`Rethink your 
-                  living & renting`}
+            living & renting`}
         </h1>
         <p>Make your stay painless with us</p>
       </div>

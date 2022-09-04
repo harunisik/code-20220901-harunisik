@@ -3,135 +3,117 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
 
-.secondScreen .contentWrapper {
-  margin-bottom: 5%;
-  margin-left: 1%;
-}
+  .contentWrapper {
+    margin-bottom: 5%;
+    margin-left: 1%;
 
-.secondScreen .contentWrapper h1 {
-  font-family: 'Exo 2';
-  font-weight: 700;
-  font-size: min(calc(20px + 4.7vw), 64px);
+    h1 {
+      font-family: 'Exo 2';
+      font-weight: 700;
+      font-size: min(calc(20px + 4.7vw), 64px);
 
-  margin: 0;
-}
+      margin: 0;
+    }
 
-.secondScreen .contentWrapper p {
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  font-size: min(calc(10px + 3vw), 18px);
-  white-space: pre-line;
-}
+    p {
+      font-family: 'Ubuntu';
+      font-weight: 400;
+      font-size: min(calc(10px + 3vw), 18px);
+      white-space: pre-line;
+    }
+  }
 
-.secondScreen .productsWrapper {
-  display: flex;
-  column-gap: 3%;
-}
+  .productsWrapper {
+    display: flex;
+    column-gap: 3%;
 
-.secondScreen .productsWrapper .product {
-  position: relative;
-  width: fit-content;
-}
+    .product {
+      position: relative;
+    }
 
-.secondScreen .productsWrapper img {
-  width: 100%;
-}
+    img {
+      width: 100%;
+    }
 
-.secondScreen .productsWrapper .productInfo {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1.4fr;
+    .productInfo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1.4fr;
 
-  background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
-  backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
+      background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+      backdrop-filter: blur(10px);
 
-  border: 1px solid lightgray;
-  border-radius: 15px;
+      border: 1px solid lightgray;
+      border-radius: 15px;
 
-  padding: 4%;
-  position: absolute;
-  bottom: -16%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: fit-content;
-}
+      padding: 4%;
+      position: absolute;
+      bottom: -16%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: fit-content;
 
-.secondScreen .productsWrapper .productInfo .title {
-  grid-column: 1 / span 2;
+      .title,
+      .price,
+      .size,
+      .book {
+        font-family: 'Ubuntu';
+        font-weight: 400;
+        font-size: min(calc(5px + 1.13vw), 18px);
 
-  margin: 0 0 0.7em 0;
+        margin: 0;
+      }
 
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  font-size: min(calc(5px + 1.13vw), 18px);
-}
-.secondScreen .productsWrapper .productInfo .price {
-  grid-row: 2 / 3;
+      .price,
+      .size,
+      .book {
+        background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+        border-radius: 10px;
+      }
 
-  margin: 0;
-  padding: 0.3em 1.3em;
-  justify-self: start;
+      .title {
+        grid-column: 1 / span 2;
+        margin-bottom: 0.7em;
+      }
 
-  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
-  border-radius: 10px;
+      .price {
+        grid-row: 2 / 3;
+        padding: 0.3em 1.3em;
+        justify-self: start;
+      }
 
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  font-size: min(calc(5px + 1.13vw), 18px);
-}
-.secondScreen .productsWrapper .productInfo .size {
-  grid-row: 2 / 3;
+      .size {
+        grid-row: 2 / 3;
+        padding: 0.3em 1.3em;
+        justify-self: start;
+      }
 
-  margin: 0;
-  padding: 0.3em 1.3em;
-  justify-self: start;
-
-  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
-  border-radius: 10px;
-
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  font-size: min(calc(5px + 1.13vw), 18px);
-}
-.secondScreen .productsWrapper .productInfo .book {
-  grid-column: 3 / 4;
-  grid-row: 1 / span 3;
-
-  margin: 0;
-  padding: 0.8em 1.6em;
-  justify-self: end;
-  align-self: end;
-
-  background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
-  border-radius: 10px;
-
-  font-family: 'Ubuntu';
-  font-weight: 500;
-  font-size: min(calc(5px + 1.13vw), 18px);
+      .book {
+        grid-column: 3 / 4;
+        grid-row: 1 / span 3;
+        padding: 0.8em 1.6em;
+        justify-self: end;
+        align-self: end;
+        font-weight: 500;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .secondScreen .productsWrapper {
-    flex-direction: column;
-    row-gap: 11vw;
-  }
+  .secondScreen {
+    .productsWrapper {
+      flex-direction: column;
+      row-gap: 11vw;
 
-  .secondScreen .productsWrapper .productInfo .title {
-    font-size: calc(6px + 1.5vw);
-  }
-
-  .secondScreen .productsWrapper .productInfo .price {
-    font-size: calc(6px + 1.5vw);
-  }
-
-  .secondScreen .productsWrapper .productInfo .size {
-    font-size: calc(6px + 1.5vw);
-  }
-
-  .secondScreen .productsWrapper .productInfo .book {
-    font-size: calc(6px + 1.5vw);
+      .productInfo {
+        .title,
+        .price,
+        .size,
+        .book {
+          font-size: calc(6px + 1.5vw);
+        }
+      }
+    }
   }
 }

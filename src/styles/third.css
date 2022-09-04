@@ -2,85 +2,86 @@
   padding: 5%;
 
   .contentWrapper {
-    margin-top: 5vw;
+    margin-top: 4vw;
     margin-bottom: 5vw;
+
+    h1 {
+      font-family: 'Exo 2';
+      font-weight: 700;
+      font-size: min(calc(20px + 4.7vw), 64px);
+
+      margin: 0;
+    }
+
+    p {
+      font-family: 'Ubuntu';
+      font-weight: 400;
+      font-size: min(calc(10px + 3vw), 18px);
+    }
   }
-}
 
-.thirdScreen .contentWrapper h1 {
-  font-family: 'Exo 2';
-  font-weight: 700;
-  font-size: min(calc(20px + 4.7vw), 64px);
+  .productsWrapper {
+    display: flex;
+    column-gap: 8vw;
 
-  margin: 0;
-}
+    .column1,
+    .column2 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8vw;
+    }
 
-.thirdScreen .contentWrapper p {
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  font-size: min(calc(10px + 3vw), 18px);
-}
+    .product {
+      position: relative;
 
-.thirdScreen .productsWrapper {
-  display: flex;
-  column-gap: 8vw;
-}
+      img {
+        width: 100%;
+      }
 
-.thirdScreen .productsWrapper .column1,
-.thirdScreen .productsWrapper .column2 {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8vw;
-}
+      .productInfo {
+        background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+        backdrop-filter: blur(10px);
 
-.thirdScreen .productsWrapper .product {
-  position: relative;
-  width: fit-content;
-}
+        border: 1px solid lightgray;
+        border-radius: 15px;
 
-.thirdScreen .productsWrapper .product img {
-  width: 100%;
-}
+        padding: 1em 0 1em 1.2em;
+        position: absolute;
+        bottom: -6vw;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 75%;
 
-.thirdScreen .productsWrapper .product .productInfo {
-  background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
-  backdrop-filter: blur(10px);
+        h1 {
+          font-family: 'Ubuntu';
+          font-weight: 700;
+          font-size: min(calc(12px + 1.05vw), 24px);
 
-  border: 1px solid lightgray;
-  border-radius: 15px;
+          margin: 0 0 0.5em 0;
+        }
 
-  padding: 1em 0 1em 1.2em;
-  position: absolute;
-  bottom: -6vw;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 70%;
-}
+        p {
+          font-family: 'Ubuntu';
+          font-weight: 300;
+          font-size: min(calc(9px + 0.44vw), 14px);
 
-.thirdScreen .productsWrapper .product .productInfo h1 {
-  font-family: 'Ubuntu';
-  font-weight: 700;
-  font-size: min(calc(12px + 1.05vw), 24px);
-
-  margin: 0 0 0.5em 0;
-}
-
-.thirdScreen .productsWrapper .product .productInfo p {
-  font-family: 'Ubuntu';
-  font-weight: 300;
-  font-size: min(calc(9px + 0.44vw), 14px);
-
-  margin: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .thirdScreen .productsWrapper {
-    flex-direction: column;
-    row-gap: 10vw;
-  }
+  .thirdScreen {
+    .productsWrapper {
+      flex-direction: column;
+      row-gap: 10vw;
 
-  .thirdScreen .productsWrapper .column1,
-  .thirdScreen .productsWrapper .column2 {
-    row-gap: 10vw;
+      .column1,
+      .column2 {
+        row-gap: 10vw;
+      }
+    }
   }
 }

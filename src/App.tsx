@@ -1,7 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import Layout from './Layout';
 import MainScreen from './MainScreen';
-import './styles/App.css';
 import SecondScreen from './SecondScreen';
 import ThirdScreen from './ThirdScreen';
 

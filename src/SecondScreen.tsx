@@ -1,5 +1,3 @@
-import './styles/second.css';
-
 const Product = ({ image, productInfo }: any) => (
   <div className="product">
     <img src={`${process.env.PUBLIC_URL}/${image}`} alt={productInfo.props.title} />
