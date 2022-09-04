@@ -1,0 +1,87 @@
+.thirdScreen {
+  padding: 5%;
+}
+
+.thirdScreen .contentWrapper {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+
+.thirdScreen .contentWrapper h1 {
+  font-family: 'Exo 2';
+  font-weight: 700;
+  font-size: min(calc(20px + 4.7vw), 64px);
+
+  margin: 0;
+}
+
+.thirdScreen .contentWrapper p {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: min(calc(10px + 3vw), 18px);
+}
+
+.thirdScreen .productsWrapper {
+  display: flex;
+  column-gap: 8vw;
+}
+
+.thirdScreen .productsWrapper .column1,
+.thirdScreen .productsWrapper .column2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8vw;
+}
+
+.thirdScreen .productsWrapper .product {
+  position: relative;
+  width: fit-content;
+}
+
+.thirdScreen .productsWrapper .product img {
+  width: 100%;
+}
+
+.thirdScreen .productsWrapper .product .productInfo {
+  background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
+  backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border: 1px solid lightgray;
+  border-radius: 15px;
+
+  padding: 1em 0 1em 2em;
+  position: absolute;
+  bottom: -6vw;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 70%;
+}
+
+.thirdScreen .productsWrapper .product .productInfo h1 {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-size: min(calc(16px + 3vw), 24px);
+
+  margin: 0 0 0.5em 0;
+}
+
+.thirdScreen .productsWrapper .product .productInfo p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-size: min(calc(6px + 3vw), 14px);
+
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .thirdScreen .productsWrapper {
+    flex-direction: column;
+    row-gap: 10vw;
+  }
+
+  .thirdScreen .productsWrapper .column1,
+  .thirdScreen .productsWrapper .column2 {
+    row-gap: 10vw;
+  }
+}

@@ -3,6 +3,7 @@ import Layout from './Layout';
 import MainScreen from './MainScreen';
 import './App.css';
 import SecondScreen from './SecondScreen';
+import ThirdScreen from './ThirdScreen';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Layout>
         <MainScreen />
         <SecondScreen />
+        <ThirdScreen />
       </Layout>
     </Router>
   );

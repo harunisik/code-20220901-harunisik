@@ -8,7 +8,7 @@ const Product = ({ image, productInfo }: any) => (
 );
 
 const ProductInfo = ({ title, price, size }: any) => (
-  <div className="priceBox">
+  <div className="productInfo">
     <p className="title">{title}</p>
     <p className="price">{price}</p>
     <p className="size">{size}</p>
