@@ -43,7 +43,7 @@
     width: 79vw;
     max-width: 940px;
 
-    > div {
+    .filterOption {
       background: #ffffff;
       border-radius: 16px;
       padding: 0.5em 0 0.5em 0.8em;
@@ -68,12 +68,16 @@
 
     .searchBtn {
       background: linear-gradient(90deg, #ff594c 0%, #fac527 100%);
+      border-radius: 16px;
+      padding: 0.5em 0 0.5em 0.8em;
+      flex: 1 0;
+
       display: flex;
       align-items: center;
       justify-content: center;
 
       p {
-        margin-left: 0.5em;
+        margin: 0 0 0 0.5em;
         font-family: 'Ubuntu';
         font-weight: 500;
         font-size: min(calc(12px + 1.6vw), 26px);

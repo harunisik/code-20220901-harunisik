@@ -1,5 +1,6 @@
 .thirdScreen {
   padding: 5%;
+  margin-bottom: 5%;
 
   .contentWrapper {
     margin-top: 4vw;
@@ -47,7 +48,7 @@
 
         padding: 1em 0 1em 1.2em;
         position: absolute;
-        bottom: -6vw;
+        bottom: -5vw;
         left: 50%;
         transform: translate(-50%, 0);
         width: 75%;
