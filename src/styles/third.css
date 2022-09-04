@@ -1,10 +1,10 @@
 .thirdScreen {
   padding: 5%;
-}
 
-.thirdScreen .contentWrapper {
-  margin-top: 5vw;
-  margin-bottom: 5vw;
+  .contentWrapper {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
 }
 
 .thirdScreen .contentWrapper h1 {
@@ -45,12 +45,11 @@
 .thirdScreen .productsWrapper .product .productInfo {
   background: linear-gradient(94.33deg, rgba(255, 255, 255, 0.6) 3.19%, rgba(255, 255, 255, 0.1) 99.26%);
   backdrop-filter: blur(10px);
-  /* Note: backdrop-filter has minimal browser support */
 
   border: 1px solid lightgray;
   border-radius: 15px;
 
-  padding: 1em 0 1em 2em;
+  padding: 1em 0 1em 1.2em;
   position: absolute;
   bottom: -6vw;
   left: 50%;
@@ -61,7 +60,7 @@
 .thirdScreen .productsWrapper .product .productInfo h1 {
   font-family: 'Ubuntu';
   font-weight: 700;
-  font-size: min(calc(16px + 3vw), 24px);
+  font-size: min(calc(12px + 1.05vw), 24px);
 
   margin: 0 0 0.5em 0;
 }
@@ -69,7 +68,7 @@
 .thirdScreen .productsWrapper .product .productInfo p {
   font-family: 'Ubuntu';
   font-weight: 300;
-  font-size: min(calc(6px + 3vw), 14px);
+  font-size: min(calc(9px + 0.44vw), 14px);
 
   margin: 0;
 }

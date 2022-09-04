@@ -1,5 +1,5 @@
 import { ReactComponent as SearchIcon } from './search-icon.svg';
-import './main.css';
+import './styles/main.css';
 
 function MainScreen() {
   return (

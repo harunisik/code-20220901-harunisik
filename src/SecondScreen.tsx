@@ -1,4 +1,4 @@
-import './second.css';
+import './styles/second.css';
 
 const Product = ({ image, productInfo }: any) => (
   <div className="product">

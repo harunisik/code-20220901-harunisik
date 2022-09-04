@@ -1,4 +1,4 @@
-import './third.css';
+import './styles/third.css';
 
 const Product = ({ image, productInfo }: any) => (
   <div className="product">
