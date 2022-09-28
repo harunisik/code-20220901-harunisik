@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Rental Website (responsive web application)
+
+https://www.figma.com/file/oKN9NbDMHh99WaQXyvAPN9/Rental-website?node-id=0%3A1
+
+![image](https://user-images.githubusercontent.com/5821127/192743631-037a4fbf-5b64-4d88-8533-12f9399c6e6d.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
